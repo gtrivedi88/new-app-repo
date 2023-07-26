@@ -1,0 +1,11 @@
+= Maintaining operator graphs using the information on the File-based catalog (FBC)
+
+File-based catalogs provide a streamlined approach to storing and distributing metadata about operators in {ProductName}. They simplify the management of graph updates, offering enhanced control and ownership of operator graphs. With a choice of JSON or YAML formats, File-based catalogs ensure backward compatibility while optimizing efficiency.
+
+The advantages it offers are:
+
+* *Enhance control and simplify graph updates:* With FBC, graph updates are consolidated into a single catalog file. This eliminates the need for iterative updates and simplifies the management of complex graphs. Users can easily manipulate and control their graphs by working with a centralized catalog file.
+
+* *Convenient management and flexibility:* Compared to SQLite, FBC offer a more convenient solution. Rather than adding one set of graph updates at a time, users can define all updates in one place using File-based catalogs. This centralized management capability simplifies the process and improves overall efficiency.
+
+* *Improved ownership and analysis:* FBC provide users with improved ownership and control over their graphs. They offer a clean and declarative template that facilitates comprehensive analysis and sanity checks. Users can easily determine upgrade possibilities and recover from error states, no longer relying on limited configuration options found in localized CSV files.

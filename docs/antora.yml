@@ -1,0 +1,5 @@
+---
+name: Documentation
+version: main
+nav:
+  - modules/how-to-guides/nav-how-to-guides.adoc

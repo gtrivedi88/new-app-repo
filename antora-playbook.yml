@@ -1,0 +1,60 @@
+site:
+  title: App Studio Internal Docs
+  url: http://localhost:8080
+  robots: allow
+  start_page: Documentation:overview:introduction.adoc
+
+content:
+  sources:
+  - url: .
+    branches: HEAD
+    start_path: docs
+    edit_url: 'https://gitlab.cee.redhat.com/red-hat-trusted-application-pipeline/internal-docs/-/blob/main/{path}'
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./antora-lunr-ui
+
+antora:
+  extensions:
+  - '@antora/collector-extension'
+  - '@antora/lunr-extension'
+
+runtime:
+  log:
+    failure_level: warn
+
+asciidoc:
+  attributes:
+
+  # Standard document attributes to be used in our documentation
+    icons: font
+    numbered: ''
+    source-highlighter: highlightjs
+    url-guide: https://gitlab.cee.redhat.com/red-hat-trusted-application-pipeline/internal-docs
+
+  # Product content attributes
+    ProductName: App Studio
+    ProductShortName: ''
+    ProductRelease: ''
+    ProductVersion: ''
+    ProductPreviousVersion: ''
+    ProductNextVersion: ''
+
+  # Repository URLs
+    repoURL1: ''
+    repoURL2: ''
+
+  # Name of APIs and their URLs
+    APIName1: ''
+    APIName2: ''
+
+  # Knowledge base article links
+    # TBD
+
+  # Links to other projects
+    Placeholder: ''
+    Placeholder2: ''
+    Placeholder3: ''

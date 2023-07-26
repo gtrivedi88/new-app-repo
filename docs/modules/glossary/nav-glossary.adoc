@@ -1,0 +1,1 @@
+* xref:file-based-catalog.adoc[File-based catalog]

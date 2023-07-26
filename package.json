@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "@antora/collector-extension": "^1.0.0-alpha.3",
+    "@antora/lunr-extension": "^1.0.0-alpha.8",
+    "antora": "^3.1.4",
+    "http-server": "^13.0.0"
+  },
+    "scripts": {
+    "build": "SITE_SEARCH_PROVIDER=lunr antora --stacktrace --fetch antora-playbook.yml --to-dir public",
+    "build-production": "npm run build -- --url=https://red-hat-trusted-application-pipeline.pages.redhat.com/internal-docs",
+    "serve": "http-server public/ -c-1",
+    "dev": "npm run build && npm run serve"
+  },
+  "overrides": {
+    "glob-parent": "6.0.2"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
